@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp", "FSharpLibrary\FSharpLibrary.fsproj", "{FC8677C9-C3C4-47E6-BAF2-744C30E16C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharpLibrary\CSharpLibrary.csproj", "{2327962B-1C9A-44F9-9060-9ACA1E117BD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC8677C9-C3C4-47E6-BAF2-744C30E16C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8677C9-C3C4-47E6-BAF2-744C30E16C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8677C9-C3C4-47E6-BAF2-744C30E16C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8677C9-C3C4-47E6-BAF2-744C30E16C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2327962B-1C9A-44F9-9060-9ACA1E117BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2327962B-1C9A-44F9-9060-9ACA1E117BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2327962B-1C9A-44F9-9060-9ACA1E117BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2327962B-1C9A-44F9-9060-9ACA1E117BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
