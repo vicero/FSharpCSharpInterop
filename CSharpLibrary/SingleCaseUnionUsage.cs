@@ -1,4 +1,5 @@
-﻿using FSharpLibrary;
+﻿using System.Linq;
+using FSharpLibrary;
 using Xunit;
 
 namespace CSharpLibrary
@@ -46,6 +47,16 @@ namespace CSharpLibrary
             Assert.True(aggregate.PrivateStructEmailAddress.Value.Equals("a@b.com"));
 
             Assert.NotEqual<object>(aggregate.PrivateEmailAddress, aggregate.PrivateStructEmailAddress);
+        }
+        
+        [Fact]
+        public static void PropertyEquality()
+        {
+            var a = FSharpLibrary.ClassAggregateWithPrivates.Create("a@b.com");
+            var b = FSharpLibrary.ClassAggregateWithPrivates.Create("a@b.com");
+            
+            Assert.Equal(1, new[] { a, b }.GroupBy(x => x.PrivateEmailAddress).Count());
+            Assert.Equal(1, new[] { a, b }.GroupBy(x => x.PrivateStructEmailAddress).Count());
         }
     }
 }
