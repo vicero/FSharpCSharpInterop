@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="RiderBugFSharpStructType.fs" />
     <Compile Include="SingleCaseUnion.fs" />
     <Compile Include="TupleType.fs" />
   </ItemGroup>
